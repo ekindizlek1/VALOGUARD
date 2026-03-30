@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Valorant Report Panel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Valorant Report Panel</h1>
+      <p>Hile yapan oyuncuları kolayca raporla</p>
+
+      <form id="reportForm">
+        <input type="text" placeholder="Oyuncu Adı" required />
+        <input type="text" placeholder="Tag (örn: #TR1)" required />
+
+        <select required>
+          <option value="">Sebep Seç</option>
+          <option>Hile</option>
+          <option>Toxic Davranış</option>
+          <option>AFK</option>
+        </select>
+
+        <textarea placeholder="Açıklama (isteğe bağlı)"></textarea>
+
+        <button type="submit">Raporla</button>
+      </form>
+
+      <p class="note">
+        Gönderim sonrası resmi Riot destek sayfasına yönlendirilirsiniz.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
